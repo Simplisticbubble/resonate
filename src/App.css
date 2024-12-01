@@ -1,0 +1,97 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  --primary: #bd1c4e;
+}
+.main {
+  display: flex;
+  justify-content: space-around;
+  gap: 5rem;
+}
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0rem 1rem;
+  border: solid 2px var(--primary);
+  background-color: var(--primary);
+  color: #fff;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+.contact-list h2 {
+  text-align: center;
+  text-decoration: underline;
+  margin: 0;
+  padding-bottom: 1rem;
+  font-size: 28px;
+}
+.contact-item {
+  /*border: solid 2px var(--primary);*/
+  padding: 0;
+  border-bottom: none;
+}
+.contact-item :hover {
+  color: #c45c7d;
+}
+.item-name h3 {
+  margin: 0rem;
+  padding: 0.2rem;
+}
+.contact-cols {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+}
+.user-col p {
+  display: flex;
+  justify-content: start;
+  text-align: start;
+}
+.contact-active {
+  border: solid 2px var(--primary);
+  background-color: var(--primary);
+  color: #fff;
+  border-radius: 2rem;
+  padding: 2rem;
+  height: 100%;
+  width: 500px;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
